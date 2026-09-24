@@ -1,0 +1,3 @@
+{"ts":"2026-09-24T16:15:03+00:00","channel":"storage","msg":"التخزين «التخزين الداخلي (uploads)»: المساحة الحرة 13.65 GB أقل من الحد الأدنى المضبوط (20.00 GB) — لن تُرسَل إليه ملفات جديدة. يمكنك تعديل الحد من زر التعديل ✎ أو من الإعدادات","ip":"unknown","uri":"","ctx":{"code":"storage_full"}}
+{"ts":"2026-09-24T16:15:03+00:00","channel":"storage","msg":"تم اكتشاف قرص تخزين جديد: \/dev\/sdb — ATA VBOX HARDDISK — 25.00 GB (HDD)","ip":"unknown","uri":"","ctx":{"code":"new_disk"}}
+{"ts":"2026-09-24T16:15:03+00:00","channel":"storage","msg":"تم اكتشاف قرص تخزين جديد: \/dev\/sdc — ATA VBOX HARDDISK — 25.00 GB (HDD)","ip":"unknown","uri":"","ctx":{"code":"new_disk"}}
