@@ -1,5 +1,0 @@
-sudo bash /var/www/html/iptv/tools/install_storage.sh
-
-sudo nano /etc/crontab
-
-* * * * * www-data /usr/bin/php /var/www/html/iptv/tools/storage_worker.php cron
