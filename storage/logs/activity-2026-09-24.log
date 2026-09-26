@@ -1,5 +1,0 @@
-{"ts":"2026-09-24T16:52:13+00:00","channel":"activity","msg":"تسجيل دخول ناجح","ip":"192.168.1.82","uri":"\/iptv\/login.php","ctx":{"ip":"192.168.1.82","details":"المستخدم: admin"}}
-{"ts":"2026-09-24T16:56:34+00:00","channel":"activity","msg":"تصدير نسخة احتياطية كاملة","ip":"192.168.1.82","uri":"\/iptv\/backup_system.php?action=export_full","ctx":{"ip":"192.168.1.82","details":"27 جدول"}}
-{"ts":"2026-09-24T18:02:01+00:00","channel":"activity","msg":"تسجيل دخول ناجح","ip":"192.168.1.82","uri":"\/iptv\/login.php","ctx":{"ip":"192.168.1.82","details":"المستخدم: admin"}}
-{"ts":"2026-09-24T18:34:13+00:00","channel":"activity","msg":"تسجيل دخول ناجح","ip":"192.168.1.82","uri":"\/iptv\/login.php","ctx":{"ip":"192.168.1.82","details":"المستخدم: admin"}}
-{"ts":"2026-09-24T18:35:43+00:00","channel":"activity","msg":"تسجيل خروج","ip":"192.168.1.82","uri":"\/iptv\/logout.php","ctx":{"ip":"192.168.1.82","details":"المستخدم: admin"}}
