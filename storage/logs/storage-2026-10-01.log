@@ -1,0 +1,5 @@
+{"ts":"2026-10-01T13:59:02+00:00","channel":"storage","msg":"التخزين «التخزين الداخلي (uploads)»: المساحة الحرة 13.64 GB أقل من الحد الأدنى المضبوط (20.00 GB) — لن تُرسَل إليه ملفات جديدة. يمكنك تعديل الحد من زر التعديل ✎ أو من الإعدادات","ip":"unknown","uri":"","ctx":{"code":"storage_full"}}
+{"ts":"2026-10-01T13:59:02+00:00","channel":"storage","msg":"تم اكتشاف قرص تخزين جديد: \/dev\/sdb — ATA VBOX HARDDISK — 25.00 GB (HDD)","ip":"unknown","uri":"","ctx":{"code":"new_disk"}}
+{"ts":"2026-10-01T13:59:02+00:00","channel":"storage","msg":"تم اكتشاف قرص تخزين جديد: \/dev\/sdc — ATA VBOX HARDDISK — 25.00 GB (HDD)","ip":"unknown","uri":"","ctx":{"code":"new_disk"}}
+{"ts":"2026-10-01T14:10:47+00:00","channel":"storage","msg":"إضافة تخزين Storage-01 على \/mnt\/storage1","ip":"192.168.1.82","uri":"\/iptv\/admin.php","ctx":{"by":"admin"}}
+{"ts":"2026-10-01T14:10:54+00:00","channel":"storage","msg":"إضافة تخزين Storage-02 على \/mnt\/storage2","ip":"192.168.1.82","uri":"\/iptv\/admin.php","ctx":{"by":"admin"}}
