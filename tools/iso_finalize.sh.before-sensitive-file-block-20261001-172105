@@ -31,7 +31,6 @@ if [[ -f "$APP_DIR/.env" ]]; then
     chown "$WEB_USER:$WEB_USER" "$APP_DIR/.env"
     chmod 0640 "$APP_DIR/.env"
 fi
-find "$APP_DIR" -maxdepth 1 -type f \( -name '*.dat' -o -name 'license_key.txt' \) -exec chown "$WEB_USER:$WEB_USER" {} + -exec chmod 0640 {} +
 
 note 'Applying PHP session hardening'
 install -d -m 0755 /etc/php/8.1/apache2/conf.d
@@ -48,13 +47,6 @@ a2enmod headers rewrite >/dev/null
 cat >/etc/apache2/conf-available/shashety-security.conf <<'EOF'
 ServerTokens Prod
 ServerSignature Off
-
-<Directory "/var/www/html/iptv">
-    Options -Indexes
-    <FilesMatch "(?i)^(?:\.env|license_key\.txt|.*\.(?:sql|sh|bak|log|dat|ini))$">
-        Require all denied
-    </FilesMatch>
-</Directory>
 <IfModule mod_headers.c>
     Header always setifempty X-Content-Type-Options "nosniff"
     Header always setifempty X-Frame-Options "SAMEORIGIN"
@@ -71,16 +63,6 @@ a2enconf shashety-security shashety-servername >/dev/null
 note 'Validating Apache configuration'
 apache2ctl configtest
 systemctl reload apache2
-
-note 'Applying network firewall'
-if command -v ufw >/dev/null 2>&1; then
-    ufw default deny incoming
-    ufw default allow outgoing
-    ufw allow 22/tcp comment 'SSH administration'
-    ufw allow 80/tcp comment 'IPTV HTTP'
-    ufw allow 41641/udp comment 'Tailscale connectivity'
-    ufw --force enable
-fi
 
 if [[ -x "$APP_DIR/tools/iptv_healthcheck.sh" ]]; then
     APP_DIR="$APP_DIR" bash "$APP_DIR/tools/iptv_healthcheck.sh"
